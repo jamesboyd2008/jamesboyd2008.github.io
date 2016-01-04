@@ -11,3 +11,15 @@ p {
 	width: 80%;
 	margin: 2em;
 }
+
+pre {
+	margin-left: 2em;
+	margin-right: 2em;
+  background: #ccffff;
+	width: 85%;
+	font-size: 2em;
+}
+
+code {
+	background: #ccffff;
+}

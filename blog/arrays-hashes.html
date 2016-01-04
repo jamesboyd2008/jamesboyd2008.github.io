@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+		<link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+		<title>James Boyd</title>
+	</head>
+	<body>
+		<header>
+			<h1>James Boyd</h1>
+		</header>
+			<nav>
+				<a href="#">blog</a>	<a href="#">resume</a>	<a href="#">contact info</a>
+			</nav>
+		<main>
+			<h2>Arrays vs. Hashes</h2>
+			<h3>January 3, 2016</h3>
+      <p>
+        In Ruby, arrays are collections of objects from any class.  They are in
+        an order, and each object has an index with which you can refer to the
+        object.
+      </p>
+      <p>
+        Hashes are similar to arrays.  Hashes are collections of key/value pairs
+        in which the keys are all unique, but not necessarily the values.
+        Also, hashes are not in order, like arrays.  Keys
+        and values can be any object type. In both arrays and hashes, if you try
+        to access a key or index that doesn't exist, you will get
+        <code>nil</code> by default.
+      </p>
+      <p>
+        Arrays are in order, whereas hashes are unordered.
+        Also, hashes are key/value pairs.  Arrays aren't necessarily pairs,
+        although you can have an array of arrays.  Those sub arrays won't
+        necessarily have unique first elements, unlike a hash.  I like arrays
+        more.  Hashes are good when you don't want any duplicate keys.  If the
+        order of the elements matters, use arrays.  Here's an example of an
+        array:
+      </p>
+<pre>sequential_objects = ["8", 6, 7, "five", 11, [0, "Deutsch for no"]]
+sequential_objects[0] # => "8"
+sequential_objects[1] # => 6
+sequential_objects[2] # => 7
+sequential_objects[-2] # => 11
+sequential_objects[-1].to_s # => [0, "Deutsch for no"]</pre>
+      <p>Here's an example of iterating over an array:</p>
+<pre>nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+odd_nums = []
+nums.each { |element| odd_nums.push(element) if element % 2 == 1 }
+odd_nums.to_s
+# => [1, 3, 5, 7, 9]</pre>
+      <p>Here's an example of a hash:</p>
+<pre>grab_bag = {
+  thing_1: "hurray!",
+  :thing_2 => "yipee!",
+  5 => "five",
+  "six" => 6,
+  two_nums: [0, 1]
+}
+grab_bag.keys.to_s # => [:thing_1, :thing_2, 5, "six", :two_nums]
+grab_bag.values.to_s # => ["hurray!", "yipee!", "five", 6, [0, 1]]</pre>
+		</main>
+		<footer>
+			<nav>
+				<!--Twitter button-->
+				<a href="https://twitter.com/jamesboyd2008" class="twitter-follow-button" data-show-count="false">Follow @jamesboyd2008</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+				<!--GitHub button-->
+				<iframe src="https://ghbtns.com/github-btn.html?user=jamesboyd2008&amp;type=follow&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>
+
+				<a href="http://www.linkedin.com">LinkedIn</a>
+				<!--LinkedIn button
+				<a href="https://www.linkedin.com/pub/james-boyd/109/793/612" style="text-decoration:none;">
+				<span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View James Boyd's LinkedIn profile" style="vertical-align:middle;" border="0">&nbsp;</span></a>
+				-->
+			</nav>
+		</footer>
+	</body>
+</html>
