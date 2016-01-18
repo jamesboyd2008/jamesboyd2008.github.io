@@ -27,7 +27,7 @@ h2 {
 }
 
 a {
-	margin-left: 20%;
+	margin-left: 15%;
 }
 
 footer {
@@ -36,4 +36,8 @@ footer {
 
 iframe {
   margin-left: 13%;
+}
+
+p {
+	margin-right: 2em;
 }
