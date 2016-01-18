@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+		<link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/tomatoes.css">
+		<title>James Boyd</title>
+	</head>
+	<body>
+		<header>
+			<h1>James Boyd</h1>
+		</header>
+			<nav>
+				<a href="http://jamesboyd2008.github.io">about</a>
+				<a href="blog-index.html">blog</a>
+				<a href="../resume.html">resume</a>
+				<a href="../contact-info.html">contact info</a>
+			</nav>
+		<main>
+			<h2>DBC Fiddler Crabs 2016 Blog</h2>
+			<h3>January 18, 2016</h3>
+			<p>
+				What is a Ruby class?
+			</p>
+			<p>
+        In Ruby, and other object oriented programming languages, a class is a
+        blueprint for how to make an object.  You may even call a class an object
+        factory.  Classes describe an object's state and behavior.  You might go
+        so far as to say that a recipe for baking cookies is like a class for objects
+        of type "cookie." You could say that a class for lawn mowers is like assembly instructions
+        and operation instructions for a lawn mower.  Here's a class for tomatoes:
+			</p>
+      <img src="../imgs/tomatoes.png" alt="tomatoes"/>
+      <p>
+        In this code example, a Tomatoes class is defined.  There is a @tomato_bucket
+        instance variable, which represents a...bucket of tomatoes.  This variable
+        can be accessed by all the methods in the class, unlike the other variables
+        in the class, which are all local to the methods in which they are defined.
+        In the initialization method, a specific quantity of tomatoes is placed in
+        the bucket, and they are all "ripe".  The next method, attr_reader, allows us
+        to see, but not change (at least not with this method),
+        the tomato bucket from outside the class.  The third method, Tomatoes#eat,
+        requires you to choose how many tomatoes you want to eat, then it takes them
+        out of the bucket.  Below the class, amongst the driver methods, you can see
+        us eat two tomatoes, and the bucket has lost two.  The last method,
+        Tomatoes#smush, smushes particular tomatoes inside the bucket.  The method
+        requires you to choose which tomatoes to smush.  We smushed the second and fourth
+        tomatoes, as represented by the <a class="in_text_link" href="http://grammarist.com/usage/indexes-indices/">indeces</a>
+        1 and 3.  I guess our bucket is more of a line of tomatoes.
+      </p>
+
+		</main>
+		<footer>
+			<nav>
+				<!--Twitter button-->
+				<a href="https://twitter.com/jamesboyd2008" class="twitter-follow-button" data-show-count="false">Follow @jamesboyd2008</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+				<!--GitHub button-->
+				<iframe src="https://ghbtns.com/github-btn.html?user=jamesboyd2008&amp;type=follow&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>
+
+				<a href="http://www.linkedin.com">LinkedIn</a>
+				<!--LinkedIn button
+				<a href="https://www.linkedin.com/pub/james-boyd/109/793/612" style="text-decoration:none;">
+				<span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View James Boyd's LinkedIn profile" style="vertical-align:middle;" border="0">&nbsp;</span></a>
+				-->
+			</nav>
+		</footer>
+	</body>
+</html>
