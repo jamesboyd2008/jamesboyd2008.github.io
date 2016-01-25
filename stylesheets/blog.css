@@ -27,3 +27,7 @@ code {
 .in_text_link {
 	margin: 0em;
 }
+
+img {
+	width: 50%;
+}
